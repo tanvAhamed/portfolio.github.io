@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .row {
+      display: flex;
+    }
+
+    .col-1 {
+      position: fixed;
+      top: 200px;
+      left: 40px;
+      width: 20%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .col-2 {
+      height: 100%;
+      margin-left: 20%;
+      padding: 30px;
+      flex-basis: 70%;
+    }
+
+    .container {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center; /* modify this property based on user preference */
+      }
+
+      .container ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 6px;
+        overflow: hidden;
+        margin-left: 300px;
+      }
+
+      .container ul li {
+        float: left;
+      }
+
+      .container li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 30px;
+        text-decoration: none;
+      }
+
+      .container li a:hover {
+        background-color: #111;
+        border-bottom: 4px solid white;
+      }
+
+      .current {
+        background-color: #4CAF50;
+      }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul style="font-size: 20px;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="education.html" class="current">Education and Work Experience</a></li>
+        <li><a href="certification&projects.html">Certifications/Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top: 5px; margin-bottom: 60px; padding: 50px;">
+    <div class="row">
+      <div class="col-1">
+        <div style="text-align: center;">
+          <img src="img/profile.jpg" alt="My Photo" class="home-img">
+          <p style="text-align: left; margin-left: 100px; font-weight: bold; font-size: 20px; line-height: 1.0; color: blue;">Tanvir Ahamed</p>
+          <p style="text-align: left; margin-left: 100px; line-height: 1.5; font-style: italic; font-weight: bold;">Data Science | Operations Research</p>
+        </div>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <span class="logo">
+            <img src="img/location.png" alt="Location" width="20" height="20">West New York, NJ
+          </span>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="mailto:tanvir.ahamed@hotmail.com">
+            <span class="logo">
+              <img src="img/email.png" alt="Email" width="20" height="20">
+              Email
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="http://bit.ly/2WK4hJj" target="_blank">
+            <span class="logo">
+              <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+              LinkedIn
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://github.com/tanvAhamed" target="_blank">
+            <span class="logo">
+              <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+              GitHub
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+            <span class="logo">
+              <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+              Google Scholar
+            </span>
+          </a>
+        </p>
+      </div>
+      <div class="col-2">
+        <div>
+          <h2 style="font-size: 32px; line-height: 2.0;">Education</h2>
+          <div class="degree" style="font-size: 18px; line-height: 1.5;">
+              <div class="school" style="width: 80%;">
+                  University of Illinois at Chicago 
+                  <img src="img/logoUIC.jpg" alt=" UIC logo" style="width:120px;height:50px;float:right;">
+              </div>
+              <div class="program">Ph.D., Civil - Transportation Engineering</div>
+              <div class="location">Chicago, IL</div>
+              <div class="date">May 2022</div>
+              <div class="clearfix"></div>
+              <hr style="border-top: 0px solid #ccc; width: 20%; margin-top: 20px; margin-bottom: 20px; margin-left: 0;">
+          </div>
+          <div class="degree" style="font-size: 18px; line-height: 1.5;">
+              <div class="school" style="width: 80%;">
+                  University of Illinois at Chicago 
+                  <img src="img/logoUIC.jpg" alt=" UIC logo" style="width:120px;height:50px;float:right;">
+              </div>
+              <div class="program">M.Sc., Civil - Transportation Engineering</div>
+              <div class="location">Chicago, IL</div>
+              <div class="date">Dec 2017</div>
+              <div class="clearfix"></div>
+              <hr style="border-top: 0px solid #ccc; width: 20%; margin-top: 20px; margin-bottom: 20px; margin-left: 0;">
+          </div>
+          <div class="degree" style="font-size: 18px; line-height: 1.5;">
+              <div class="school" style="width: 77%;">
+                  Bangladesh University of Engineering &amp; Technology 
+                  <img src="img/buet.jpg" alt=" BUET logo" style="width:50px;height:45px;float:right;">
+              </div>
+              <div class="program">B.Sc., Civil - Transportation Engineering</div>
+              <div class="location">Dhaka, Bangladesh</div>
+              <div class="date">Sep 2015</div>
+              <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div>
+          <h2 style="font-size: 32px; line-height: 2.0;">Work Experience</h2>
+
+          <div class="work" style="width: 77%; font-size: 18px; line-height: 1.5;">
+            <h3 style="color: #3366cc">Operations Research Engineer, Wheels Up <img src="img/wheelsup.jpg" alt="Wheels Up logo" style="width:55px;height:55px;float:right;"></h3>
+            <p><strong>Aug 2021 - Mar 2023</strong></p>
+            <ul style="margin-top: 5px;">
+              <li>As the Data Science team's next generation R&D effort, developed efficient heuristic for fractional jet ownership services' planning and scheduling.</li>
+              <li>Tested and demonstrated the value of flex-related implementation style and associated parameters, which allows flexibility for a random set of customers' departure time.</li>
+              <li>Proposed alternative crew rest scenarios and reported the total operational impact, leading to changes in crew duty hours for the month of July 2022.</li>
+              <li>Modernized and improved the Legacy Optimization Engine by replacing the existing commercial solver (CPLEX to Gurobi) to run applications on Virtual Machines.</li>
+              <li>Developed Crew Scheduling Optimizer product requirements by consulting with different operators' Crew Scheduling teams.</li>
+            </ul>
+            <hr style="border-top: 0px solid #ccc; width: 20%; margin-top: 30px; margin-bottom: 30px; margin-left: 0;">
+          </div>
+
+          <div class="work" style="width: 77%; font-size: 18px; line-height: 1.5;">
+            <h3 style="color: #3366cc">Graduate Research Assistant, National Science Foundation (NSF) Grant <img src="img/nsf.jpg" alt="UIC logo" style="width:65px;height:65px;float:right;"></h3>
+            <p><strong>Jan 2019 - Jul 2021</strong> <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1663411&HistoricalAwards=false" class="btn" style="font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; color: #fff; background-color: #007bff; border-radius: 5px; padding: 5px 10px; margin-left: 10px;">See Details on NSF Webpage</a></p>
+            <ul style="margin-top: 5px;">
+              <li>Investigated two fundamental issues: efficient crowdsourcee-request assignment and relocating idle crowdsourced individuals (crowdsourcees) to further improve assignment efficiency.</li>
+              <li>As a team-leader of this project, developed a novel learning-based approach to tackle the
+  crowdsourcee-request assignment.</li>
+              <li>Developed a queueing network-based framework to characterize crowdshipping system
+  performance at the macroscale.</li>
+            </ul>
+            <hr style="border-top: 0px solid #ccc; width: 20%; margin-top: 30px; margin-bottom: 30px; margin-left: 0;">
+          </div>
+
+          <div class="work" style="width: 80%; font-size: 18px; line-height: 1.5;">
+            <h3 style="color: #3366cc">Graduate Research Assistant, DSC Logistics Funded Project <img src="img/UIC.jpg" alt="UIC logo" style="width:180px;height:100px;float:right;"></h3>
+            <p><strong>Aug 2016 - Jan 2017</strong></p>
+            <ul style="margin-top: 5px;">
+              <li>Studied DSC Logistics (a 3PL) Pricing Behavior in Spot Markets.</li>
+              <li>Conducted statistical tests, econometric modeling, and scenario analysis employing DSC and
+  DAT proprietary data.</li>
+              <li>Analyzed DSC's pricing practice and compared with DAT rates, detailed by lane and time.</li>
+              <li>Provided recommendations to DSC on future pricing strategies.</li>
+            </ul>
+            <hr style="border-top: 0px solid #ccc; width: 20%; margin-top: 30px; margin-bottom: 30px; margin-left: 0;">
+          </div>
+
+          <div class="work" style="width: 80%; font-size: 18px; line-height: 1.5;">
+            <h3 style="color: #3366cc">Graduate Research Assistant, Urban Transportation Center at UIC <img src="img/UTC.jpg" alt="UTC logo" style="width:250px;height:55px;float:right;"></h3>
+            <p><strong>Jan 2017 - Dec 2017</strong></p>
+            <ul style="margin-top: 5px;">
+              <li>Assisted in preparing the Illinois Long Range Transportation Plan.</li>
+              <li>Conducted rail traffic analysis using the 2014 U.S. Surface Transportation Board Carload
+  Waybill Sample.</li>
+              <li>Presented freight flows by key commodities, directional flows and geographic markets.</li>
+            </ul>
+            <hr style="border-top: 0px solid #ccc; width: 20%; margin-top: 30px; margin-bottom: 30px; margin-left: 0;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: #333333;">
+    <div class="container">
+      <p><span class="name" style="font-weight: bold; color: white;">&copy; 2023 Tanvir Ahamed | </span>
+        <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+        <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+        <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://github.com/tanvAhamed" target="_blank">
+        <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

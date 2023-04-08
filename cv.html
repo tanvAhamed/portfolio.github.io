@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .row {
+      display: flex;
+    }
+
+    .col-1 {
+      position: fixed;
+      top: 200px;
+      left: 40px;
+      width: 20%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .col-2 {
+      height: 100%;
+      margin-left: 20%;
+      padding: 30px;
+      flex-basis: 70%;
+    }
+
+    .container {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center; /* modify this property based on user preference */
+      }
+
+      .container ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 6px;
+        overflow: hidden;
+        margin-left: 300px;
+      }
+
+      .container ul li {
+        float: left;
+      }
+
+      .container li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 30px;
+        text-decoration: none;
+      }
+
+      .container li a:hover {
+        background-color: #111;
+        border-bottom: 4px solid white;
+      }
+
+      .current {
+        background-color: #4CAF50;
+      }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul style="font-size: 20px;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html" class="current">CV</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="education.html">Education and Work Experience</a></li>
+        <li><a href="certification&projects.html">Certifications/Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top: 5px; margin-bottom: 60px; padding: 50px;">
+    <div class="row">
+      <div class="col-1">
+        <div style="text-align: center;">
+          <img src="img/profile.jpg" alt="My Photo" class="home-img">
+          <p style="text-align: left; margin-left: 100px; font-weight: bold; font-size: 20px; line-height: 1.0; color: blue;">Tanvir Ahamed</p>
+          <p style="text-align: left; margin-left: 100px; line-height: 1.5; font-style: italic; font-weight: bold;">Data Science | Operations Research</p>
+        </div>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <span class="logo">
+            <img src="img/location.png" alt="Location" width="20" height="20">West New York, NJ
+          </span>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="mailto:tanvir.ahamed@hotmail.com">
+            <span class="logo">
+              <img src="img/email.png" alt="Email" width="20" height="20">
+              Email
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="http://bit.ly/2WK4hJj" target="_blank">
+            <span class="logo">
+              <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+              LinkedIn
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://github.com/tanvAhamed" target="_blank">
+            <span class="logo">
+              <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+              GitHub
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+            <span class="logo">
+              <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+              Google Scholar
+            </span>
+          </a>
+        </p>
+      </div>
+      <div class="col-2">
+        <div style="font-size: 18px;">
+          <section>
+            <p>My resume/CV can be downloaded from here.  <a href="resumeTanvirAhamed.pdf" class="btn" download style="font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600; text-decoration: none; color: #fff; background-color: #007bff; border-radius: 5px; padding: 5px 10px; margin-left: 10px;">Download Link</a></p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: #333333;">
+    <div class="container">
+      <p><span class="name" style="font-weight: bold; color: white;">&copy; 2023 Tanvir Ahamed | </span>
+        <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+        <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+        <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://github.com/tanvAhamed" target="_blank">
+        <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

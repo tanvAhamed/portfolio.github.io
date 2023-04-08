@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .row {
+      display: flex;
+    }
+
+    .col-1 {
+      position: fixed;
+      top: 200px;
+      left: 40px;
+      width: 20%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .col-2 {
+      height: 100%;
+      margin-left: 20%;
+      padding: 30px;
+      flex-basis: 70%;
+    }
+
+    .container {
+      background-color: #333;
+      overflow: hidden;
+      padding: 10px 0;
+      align-items: center;
+      text-align: center; /* modify this property based on user preference */
+    }
+
+    .container ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 6px;
+      overflow: hidden;
+      margin-left: 300px;
+    }
+
+    .container ul li {
+      float: left;
+    }
+
+    .container li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px 30px;
+      text-decoration: none;
+    }
+
+    .container li a:hover {
+      background-color: #111;
+      border-bottom: 4px solid white;
+    }
+
+    .current {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul style="font-size: 20px;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="education.html">Education and Work Experience</a></li>
+        <li><a href="certification&projects.html" class="current">Certifications/Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top: 5px; margin-bottom: 60px; padding: 50px;">
+    <div class="row">
+      <div class="col-1">
+        <div style="text-align: center;">
+          <img src="img/profile.jpg" alt="My Photo" class="home-img">
+          <p style="text-align: left; margin-left: 100px; font-weight: bold; font-size: 20px; line-height: 1.0; color: blue;">Tanvir Ahamed</p>
+          <p style="text-align: left; margin-left: 100px; line-height: 1.5; font-style: italic; font-weight: bold;">Data Science | Operations Research</p>
+        </div>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <span class="logo">
+            <img src="img/location.png" alt="Location" width="20" height="20">West New York, NJ
+          </span>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="mailto:tanvir.ahamed@hotmail.com">
+            <span class="logo">
+              <img src="img/email.png" alt="Email" width="20" height="20">
+              Email
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="http://bit.ly/2WK4hJj" target="_blank">
+            <span class="logo">
+              <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+              LinkedIn
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://github.com/tanvAhamed" target="_blank">
+            <span class="logo">
+              <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+              GitHub
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+            <span class="logo">
+              <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+              Google Scholar
+            </span>
+          </a>
+        </p>
+      </div>
+      <div class="col-2">
+        <h2 style="font-size: 32px; line-height: 2.0;">Certifications</h2>
+        <ul>
+          <div class="list__item" style="width: 90%; font-size: 18px; line-height: 1.5;">
+            <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/8dcb45d888e1a9a385348adecca8e38ef4e2048d" target="_blank" rel="permalink">Case Study: Analyzing Customer Churn in Tableau </a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Acquired skills in Tableau to analyze customer churn rates, create visualizations, calculated fields, and dynamic graphs using filters and parameters, and present your findings in a story format.
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/62bf5f7503fc2b1c97b2b5a08ddbe1bc9fec645a?raw=1" target="_blank" rel="permalink">Extreme Gradient Boosting with XGBoost</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Gained practical experience in using XGBoost for classification and regression tasks, incorporating it into machine learning pipelines, and fine-tuning models for improved performance.
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://moonshot.scaler.com/s/sl/aHlRa7dqRX" target="_blank" rel="permalink">High Level Design of Food Delivery Apps</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Developed skills in designing scalable web applications for food delivery apps. The course covered various topics, including efficient data structures like Geo Hashing and Quadtree, as well as Proximity Service, Bandwidth Optimization, Geolocation, and Component Design.
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/408a05a691149fa05ed3b6fa88bd9eb9cf820c9e?raw=1" target="_blank" rel="permalink">Time Series Analysis in Python</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Worked with datasets to gain practical experience exploring Autocorrelation, Autoregressive Models, Moving Average Models, Cointegration Models, and Financial Forecasting.
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/MLQV5P5R28VF" target="_blank" rel="permalink">Sentiment Analysis with Deep Learning using BERT</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Fostered several valuable skills in the field of natural language processing (NLP). These include multi-class classification, neural networks, and PyTorch implementation of Google AI's BERT model. With these skills, I am now equipped to effectively analyze and classify sentiment in large sets of text data, providing valuable insights for a range of applications.
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/RP76S6K86G9Q" target="_blank" rel="permalink">Tesla Stock Price Prediction using Facebook Prophet</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Attained skills in creating a Facebook Prophet machine learning model to forecast the stock price of Tesla 30 days into the future. Additionally, I gained proficiency in data visualization using Plotly Express and evaluating the performance of the model using Google Finance in Google Sheets.
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://moonshot.scaler.com/s/sl/OWrzkn76ud" target="_blank" rel="permalink">Kubernetes + Docker Bootcamp</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Obtained hands-on skills in working with images and containers using Docker and Kubernetes commands. The course covered the concepts of containerization and how Docker-Kubernetes can help in deploying production quality applications.
+                </p>
+              </li>
+            </article>
+          </div>
+        </ul>
+        <h2 style="font-size: 32px; line-height: 2.0;">Projects</h2>
+        <ul>
+          <div class="list__item" style="width: 90%; font-size: 18px; line-height: 1.5;">
+            <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://github.com/tanvAhamed/pyomo-medical-centers-allocation" target="_blank" rel="permalink">Optimizing Medical Support Center Allocation During Natural Disasters</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  <div>
+                    <p>Formulated and implemented a Mixed Integer Linear Programming (MILP) to allocate a limited number of medical support centers in a way that maximizes the effective reachable population during natural disasters such as earthquakes, while satisfying certain constraints.</p>
+                  </div>
+                  <div>
+                    <p>This approach can ensure that medical assistance reaches those in need in a timely manner, ultimately saving lives and minimizing the impact of these disasters on affected communities. The project exploited Python-based Pyomo modeling language to formulate the optimization problem and an open-source solver (Coin-or branch and cut) to solve it.</p>
+                  </div>
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="#" target="_blank" rel="permalink">Implement Column Generation to Solve the Vehicle Routing Problem with Time Window</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  <div>
+                    <p>Implemented the column generation technique in a project using the commercial solver Gurobi in a Conda environment. Column generation is a mathematical optimization technique that can be used to solve linear and mixed-integer programming problems efficiently.</p>
+                  </div>
+                  <div>
+                    <p>
+                    To put it simply, column generation is a method of reducing the number of variables in a problem by generating them iteratively. For example, consider a transportation problem where a company needs to transport goods from several factories to several warehouses using a limited number of trucks. In the traditional method, all possible routes between factories and warehouses are considered as variables in the problem, which can be a very large number. However, with column generation, we only consider a subset of the routes at each iteration, and new routes are added as needed.
+                    </p>
+                  </div>
+                  <div>
+                    <p>By generating variables in this way, column generation can solve problems that were previously considered unsolvable, leading to more efficient and effective solutions.
+                    </p>
+                  </div>
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="#" target="_blank" rel="permalink">Netflix Movie Recommendation Engine</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  <div>
+                    <p>Netflix provided anonymous rating data and challenged the data science community to develop a movie recommendation system that can outperform their existing Cinematch algorithm by 10%. The goal was to predict the rating a user would give to a movie they had not yet rated and minimize the difference between predicted and actual ratings.</p>
+                  </div>
+                  <div>
+                    <p>The project involved working with a dataset that contained information on movie ratings and dates, along with corresponding customer and movie IDs. The goal of the project was to solve a recommendation problem and a regression problem, with the evaluation of performance measured using mean absolute percentage error and root mean square error metrics.</p>
+                  </div>
+                </p>
+              </li>
+            </article>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: #333333;">
+    <div class="container">
+      <p><span class="name" style="font-weight: bold; color: white;">&copy; 2023 Tanvir Ahamed | </span>
+        <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+        <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+        <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://github.com/tanvAhamed" target="_blank">
+        <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

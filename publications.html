@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .row {
+      display: flex;
+    }
+
+    .col-1 {
+      position: fixed;
+      top: 200px;
+      left: 40px;
+      width: 20%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .col-2 {
+      height: 100%;
+      margin-left: 20%;
+      padding: 30px;
+      flex-basis: 70%;
+    }
+
+    .container {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center; /* modify this property based on user preference */
+      }
+
+      .container ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 6px;
+        overflow: hidden;
+        margin-left: 300px;
+      }
+
+      .container ul li {
+        float: left;
+      }
+
+      .container li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 30px;
+        text-decoration: none;
+      }
+
+      .container li a:hover {
+        background-color: #111;
+        border-bottom: 4px solid white;
+      }
+
+      .current {
+        background-color: #4CAF50;
+      }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul style="font-size: 20px;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="publications.html" class="current">Publications</a></li>
+        <li><a href="education.html">Education and Work Experience</a></li>
+        <li><a href="certification&projects.html">Certifications/Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top: 5px; margin-bottom: 60px; padding: 50px;">
+    <div class="row no-gutters">
+      <div class="col-1">
+        <div style="text-align: center;">
+          <img src="img/profile.jpg" alt="My Photo" class="home-img">
+          <p style="text-align: left; margin-left: 100px; font-weight: bold; font-size: 20px; line-height: 1.0; color: blue;">Tanvir Ahamed</p>
+          <p style="text-align: left; margin-left: 100px; line-height: 1.5; font-style: italic; font-weight: bold;">Data Science | Operations Research</p>
+        </div>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <span class="logo">
+            <img src="img/location.png" alt="Location" width="20" height="20">West New York, NJ
+          </span>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="mailto:tanvir.ahamed@hotmail.com">
+            <span class="logo">
+              <img src="img/email.png" alt="Email" width="20" height="20">
+              Email
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="http://bit.ly/2WK4hJj" target="_blank">
+            <span class="logo">
+              <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+              LinkedIn
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://github.com/tanvAhamed" target="_blank">
+            <span class="logo">
+              <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+              GitHub
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+            <span class="logo">
+              <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+              Google Scholar
+            </span>
+          </a>
+        </p>
+      </div>
+      <div class="col-2">
+        <h2 style="font-size: 32px; line-height: 2.0;">Publications</h2>
+        <h3 style="font-size: 24px; line-height: 2.0;">Peer-Reviewed Journals and Dissertation</h3>
+        <ul>
+          <div class="list__item">
+            <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://drive.google.com/file/u/0/d/1pFxeej4M4JkzPl9Bf3LTlSB2WdLaJezr/view" target="_blank" rel="permalink">Deep reinforcement learning for crowdsourced urban delivery</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  <b>Tanvir Ahamed</b>, Bo Zou, Nahid Parvez Farazi, Theja Tulabandhula. <em>Transportation Research Part B: Methodological</em>, 152, 227-257 (2021)
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S2590198221001317" target="_blank" rel="permalink">Deep reinforcement learning in transportation research: A review</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  Nahid Parvez Farazi, Bo Zou, <b>Tanvir Ahamed</b>, Limon Barua. Transportation Research Interdisciplinary Perspectives, 11, 100425 (2021)
+                </p>
+              </li>
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://scholar.archive.org/work/xo55xbbf6vhebbdcvmc3ge7b7u/access/wayback/https://s3-eu-west-1.amazonaws.com/pstorage-uic-6771015390/36189201/AHAMEDDISSERTATION2022.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3OGA3B5WHOL7KWOM/20220712/eu-west-1/s3/aws4_request&X-Amz-Date=20220712T182832Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=f6c9eed39e5bbb7695abbeee4b46a6c66e11576305dc4a07572bf15272f06ef3" target="_blank" rel="permalink">Towards Urban Delivery Innovations: Macro- and Micro-Level Models of Crowdshipping</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  <b>Tanvir Ahamed</b>. Doctoral dissertation, University of Illinois at Chicago (2022)
+                </p>
+              </li>
+            </article>
+          </div>
+        </ul>
+
+        <h3 style="font-size: 24px; line-height: 2.0;">arXiv Preprint Papers</h3>
+        <ul>
+          <div class="list__item">
+            <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+              <li>
+                <h3 class="archive__item-title" itemprop="headline">
+                  <a href="https://arxiv.org/pdf/2105.13845" target="_blank" rel="permalink">Multi-tier Adaptive Memory Programming and Cluster- and Job-based Relocation for Distributed On-demand Crowdshipping</a>
+                </h3>
+                <p class="archive__item-excerpt" itemprop="description">
+                  <b>Tanvir Ahamed</b>, Bo Zou. arXiv preprint arXiv:2105.13845 (2021)
+                </p>
+              </li>
+            </article>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: #333333;">
+    <div class="container">
+      <p><span class="name" style="font-weight: bold; color: white;">&copy; 2023 Tanvir Ahamed | </span>
+        <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+        <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+        <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://github.com/tanvAhamed" target="_blank">
+        <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

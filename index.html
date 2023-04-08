@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .row {
+      display: flex;
+    }
+
+    .col-1 {
+      position: fixed;
+      top: 200px;
+      left: 40px;
+      width: 20%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .col-2 {
+      height: 100%;
+      margin-left: 20%;
+      padding: 30px;
+      flex-basis: 70%;
+    }
+
+    .container {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center; /* modify this property based on user preference */
+      }
+
+      .container ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 6px;
+        overflow: hidden;
+        margin-left: 300px;
+      }
+
+      .container ul li {
+        float: left;
+      }
+
+      .container li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 30px;
+        text-decoration: none;
+      }
+
+      .container li a:hover {
+        background-color: #111;
+        border-bottom: 4px solid white;
+      }
+
+      .current {
+        background-color: #4CAF50;
+      }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul style="font-size: 20px;">
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="education.html">Education and Work Experience</a></li>
+        <li><a href="certification&projects.html">Certifications/Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top: 5px; margin-bottom: 60px; padding: 50px;">
+    <div class="row">
+      <div class="col-1">
+        <div style="text-align: center;">
+          <img src="img/profile.jpg" alt="My Photo" class="home-img">
+          <p style="text-align: left; margin-left: 100px; font-weight: bold; font-size: 20px; line-height: 1.0; color: blue;">Tanvir Ahamed</p>
+          <p style="text-align: left; margin-left: 100px; line-height: 1.5; font-style: italic; font-weight: bold;">Data Science | Operations Research</p>
+        </div>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <span class="logo">
+            <img src="img/location.png" alt="Location" width="20" height="20">West New York, NJ
+          </span>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="mailto:tanvir.ahamed@hotmail.com">
+            <span class="logo">
+              <img src="img/email.png" alt="Email" width="20" height="20">
+              Email
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="http://bit.ly/2WK4hJj" target="_blank">
+            <span class="logo">
+              <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+              LinkedIn
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://github.com/tanvAhamed" target="_blank">
+            <span class="logo">
+              <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+              GitHub
+            </span>
+          </a>
+        </p>
+        <p style="text-align: left; margin-left: 100px; line-height: 0.15px;">
+          <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+            <span class="logo">
+              <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+              Google Scholar
+            </span>
+          </a>
+        </p>
+      </div>
+      <div class="col-2">
+        <h2 style="font-size: 32px; line-height: 2.0;">About Me</h2>
+        <p style="font-size: 18px; line-height: 1.5; width: 90%;">
+            Greetings, I'm <span class="name" style="font-weight: bold; font-style: italic;">Tanvir Ahamed</span>, a Data Science and Operations Research Specialist based in West New York, NJ. I specialize in developing high-performance algorithms and heuristics for solving complex OR problems. Additionally, I have extensive experience managing and analyzing large datasets, using visualization tools to identify patterns, and deploying cutting-edge decision support tools.
+        </p>
+
+        <p style="font-size: 18px; line-height: 1.5; width: 90%;">
+            Throughout my career, I have had the privilege of being involved in the modernization of optimization tools, which have played a vital role in enabling Jet Ownership business to achieve revolutionary new business model goals. In addition to this, I have made valuable contributions to the advancement of research in Supply Chain and Logistics. More specifically, I have been instrumental in developing highly effective planning and scheduling tools for jet ownership services, as well as pushing the boundaries of research in last-mile delivery to expand knowledge in the field. I am dedicated to utilizing my skills and experience to continue making significant contributions to these areas and beyond.
+        </p>
+        <h2 style="font-size: 32px; line-height: 2.0;">Industry Experience</h2>
+        <ul style="list-style-type: square; font-size: 18px; line-height: 1.5; width: 90%;">
+          <li>Developed efficient planning and scheduling heuristic for Wheels Up's jet ownership services.</li>
+          <li>Demonstrated value of flex-related implementation style and parameters.</li>
+          <li>Proposed alternative crew rest scenarios and reported operational impact, leading to changes in crew duty hours for July 2022.</li>
+          <li>Modernized legacy Optimizer Engine by replacing CPLEX with GUROBI for Virtual Machine usage.</li>
+          <li>Contributed to the development of a Crew Scheduling Optimizer to optimize crew resource allocation.</li>
+          <li>Improved Optimizer Engine functionality by editing, debugging, and experimenting with existing features.</li>
+        </ul>
+        <h2 style="font-size: 32px; line-height: 2.0;">Research Contributions</h2>
+        <ul style="list-style-type: square; font-size: 18px; line-height: 1.5; width: 90%;">
+          <li>Investigated efficient crowdsourcee-request assignment and relocating idle crowdsourced individuals for distributed on-demand crowdsourced delivery.</li>
+          <li>Developed a deep reinforcement learning approach for efficient crowdsourcee-request assignment and a comprehensive and novel characterization of crowdshipping system states.</li>
+          <li>Built a queueing network-based framework to optimize crowdsourced urban delivery systems and determined the optimal pool size of crowdsourcees to meet given shipping requests.</li>     
+          <li>Conducted research on pricing behavior in spot markets, and provided recommendations to logistics company on future pricing strategies.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: #333333;">
+    <div class="container">
+      <p><span class="name" style="font-weight: bold; color: white;">&copy; 2023 Tanvir Ahamed | </span>
+        <a href="https://scholar.google.com/citations?user=ELQ2fEcAAAAJ&hl=en" target="_blank">
+        <img src="img/googleScholar.jpg" alt="Scholar" width="20" height="20">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+        <img src="img/linkedIn.jpg" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://github.com/tanvAhamed" target="_blank">
+        <img src="img/GitHub.png" alt="GitHub" width="20" height="20">
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
